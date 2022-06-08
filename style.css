@@ -1,0 +1,108 @@
+:root{
+    --bright-orange: hsl(31, 77%, 52%);
+    --dark-cyan: hsl(184, 100%, 22%);
+    --very-dark-cyan: hsl(179, 100%, 13%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body.button{
+    font-family: 'Lexend Deca', sans-serif;
+ }
+h3{
+    font-family: 'Big Shoulders Display', sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
+ }
+ p{
+    font-size: 15px;
+    line-height: 1.6;
+    
+ }
+
+ .btn{
+     background-color: #fff;
+     border: 2px solid #fff;
+     border-radius: 30px;
+     padding: 10px 20px;
+     transition: all 0.3s ease-in-out;
+ }
+
+.bright-sed{
+    background-color: var(--bright-orange);
+    color: #fff;
+ }
+ .bright-sed .btn{
+     color: var(--bright-orange);
+ }
+.dark-suv{
+    background-color: var(--dark-cyan);
+    color: #fff;
+ }
+ .dark-suv .btn{
+     color: var(--dark-cyan);
+ }
+.darker-luxury{
+    background-color: var(--very-dark-cyan);
+    color: #fff;
+    border-radius: 0 0 10px 10px;
+
+ }
+ .darker-luxury .btn{
+     color: var(--very-dark-cyan);
+ }
+ .btn:hover{
+    background-color: transparent;
+    color: #fff;
+}
+.container{
+    padding: 20px;
+}
+.card{
+    padding: 30px;
+}
+.card img{
+    margin-bottom: 20px;
+}
+.card h3{
+    margin-bottom: 25px;
+}
+.card p{
+    margin-bottom: 30px;
+}
+
+
+   /* Feel free to remove these styles or customise in your own stylesheet 👍  */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); 
+}
+
+
+@media (min-width: 690px) {
+   .container {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       min-height: 100vh;
+       max-width: 900px;
+       margin: auto;
+   }
+
+   .bright-sed {
+       border-radius: 10px 0 0 10px;
+   }
+   .darker-luxury {
+       border-radius: 0 10px 10px 0;
+       
+   }
+   .card {
+       padding: 46px;
+   }
+   .card p{
+    margin-bottom: 80px;
+}
+}
